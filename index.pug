@@ -1,0 +1,41 @@
+include pug/configuraciones.pug
+<!DOCTYPE html>
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    title Document
+  body
+    header.header
+      .header__container1
+        aside.header__container1--adleft
+          img(src="", alt="")
+          h2 #{titulo_main[0]}
+          h3 #{titulo_main[1]}
+          h4 #{titulo_main[2]}
+        .header__container1--brand
+          h1 #{titulo_main[3]}
+          span
+          h3 #{titulo_main[4]}
+          span
+        .header__container1--adright
+          h2 #{titulo_main[5]}
+          h2.price #{titulo_main[6]}
+          h4 #{titulo_main[7]}
+          img(src="", alt="")
+      .header__container2
+        .header__container2--reviews
+          .reviews--carrousel
+            ul
+              each carrousel in carrouseles
+                li
+                  a=carrousel
+      .header__container3
+        figue
+          img(src="", alt="")
+        nav
+          each link in nav_bar
+            li
+              a=link
+        figure
+          img(src="", alt="")
