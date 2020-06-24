@@ -1,5 +1,13 @@
--var titulo_main = ["devi's public house", "beers*bourbons*bread", "los angeles-montreal-new york", "hollywood factory", "march 24 1976", "telephone is here", "$18.90", "los angeles montreal"]
+-var titulo_main = ["devy's public house", "beers*bourbons*bread", "los angeles-montreal-new york", "hollywood factory", "march 24 1976", "telephone is here", "$18.90", "los angeles montreal"]
 
 -var carrouseles = ["Cool Han Luke 7.2", "Planet of the Aples 9.1", "The Godfather 9.6", "It's a Wonderful time 7.5", "The Third Man 6.9", "Dr. Strangelove 8.9"]
 
 -var nav_bar = ["latest", "featured", "automobiles", "celebreties", "hollywood directory", "trending movies", "book tickets", "fans", "books"]
+
+-var titulos_articulos  = ["The brand new Hollywood horror movie is here!", "The smoking hero of Vela and Gobson!", "Elisabeth Taylor's Life In Front Of The Camera"]
+
+mixin new(number,imagen)
+  article
+    figure
+      img(src="../image/"+imagen, alt="Imágen artículo")
+    h1 #{titulos_articulos[number]}

@@ -3,29 +3,33 @@
   <head>
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>Document</title>
+    <title>NewsPaper</title>
+    <link rel="stylesheet" href="css/main.css"/>
   </head>
   <body>
     <header class="header">
-      <div class="header__container1">
-        <aside class="header__container1--adleft"><img src="" alt=""/>
-          <h2>devi's public house</h2>
-          <h3>beers*bourbons*bread</h3>
-          <h4>los angeles-montreal-new york</h4>
+      <div class="intro">
+        <aside class="intro__ads--left">
+          <figure><img src="" alt=""/></figure>
+          <div class="intro__ads--descriptionLeft">
+            <h2>devy's public house</h2>
+            <h3>beers*bourbons*bread</h3>
+            <h4>los angeles-montreal-new york</h4>
+          </div>
         </aside>
-        <div class="header__container1--brand">
+        <div class="intro__maintitle">
           <h1>hollywood factory</h1><span></span>
           <h3>march 24 1976</h3><span></span>
         </div>
-        <div class="header__container1--adright">
+        <div class="intro__ads--right">
           <h2>telephone is here</h2>
           <h2 class="price">$18.90</h2>
           <h4>los angeles montreal</h4><img src="" alt=""/>
         </div>
       </div>
-      <div class="header__container2">
-        <div class="header__container2--reviews">
-          <div class="reviews--carrousel">
+      <div class="review">
+        <div class="review__container">
+          <div class="review--carrousel">
             <ul>
               <li><a>Cool Han Luke 7.2</a></li>
               <li><a>Planet of the Aples 9.1</a></li>
@@ -37,21 +41,87 @@
           </div>
         </div>
       </div>
-      <div class="header__container3">
+      <div class="menu">
         <figue><img src="" alt=""/></figue>
-        <nav>
-          <li><a>latest</a></li>
-          <li><a>featured</a></li>
-          <li><a>automobiles</a></li>
-          <li><a>celebreties</a></li>
-          <li><a>hollywood directory</a></li>
-          <li><a>trending movies</a></li>
-          <li><a>book tickets</a></li>
-          <li><a>fans</a></li>
-          <li><a>books</a></li>
+        <nav class="menu__nav">
+          <ul>
+            <li><a href="#">latest</a></li>
+            <li><a href="#">featured</a></li>
+            <li><a href="#">automobiles</a></li>
+            <li><a href="#">celebreties</a></li>
+            <li><a href="#">hollywood directory</a></li>
+            <li><a href="#">trending movies</a></li>
+            <li><a href="#">book tickets</a></li>
+            <li><a href="#">fans</a></li>
+            <li><a href="#">books</a></li>
+          </ul>
         </nav>
         <figure><img src="" alt=""/></figure>
       </div>
     </header>
+    <div class="main">
+      <aside class="main__news">
+        <article class="news--up">
+          <h2>The Great Kate</h2>
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cupiditate nostrum fugit, rem et sint laboriosam nobis sit repudiandae. Qui facilis culpa praesentium, nulla commodi eos veniam deleniti obcaecati odit dignissimos.</p>
+          <h3>watch video<a href=""><img src="" alt=""/></a></h3><img src="" alt=""/>
+        </article>
+        <article class="news--down">
+          <figure><img src="" alt=""/></figure>
+          <h2>
+             Everyone In Old Hollywood Was <span>On Acid</span></h2>
+          <h4>March 20, 1966</h4>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit consequuntur doloremque veritatis, aliquid est non iusto ratione eaque, architecto, cum itaque maiores velit. Consequatur quaerat, soluta excepturi repellendus quod ipsum.</p>
+          <h3>read more<a href=""><img src="" alt=""/></a></h3>
+        </article>
+        <aside class="news--ad">
+          <h1>Dream Lover</h1>
+          <h2>the bobby darin</h2>
+          <h3>book<a href=""><img src="" alt=""/></a></h3>
+        </aside>
+      </aside>
+      <div class="trending">
+        <div class="trending__principal">
+          <figure><img src="" alt=""/></figure>
+          <h3>trending</h3><a href=""><img src="" alt=""/></a>
+        </div>
+        <div class="trending__description">
+          <h1>Brunettes, Redheads Picket Does Gentleman Prefer Blondes</h1>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis explicabo voluptatibus dolores nesciunt quam qui numquam libero! Minima sequi alias ad excepturi quos. Porro quisquam non, saepe amet illum praesentium?</p>
+        </div>
+        <div class="trending__autor"><img src="" alt=""/>
+          <div class="trending__autor--description">
+            <h1>Jinneuvile Martin Jose</h1>
+            <h3>March 12, 1966</h3>
+          </div>
+          <div class="trending__next"><a href=""><img src="" alt=""/></a><a href=""><img src="" alt=""/></a></div>
+        </div>
+      </div>
+      <div class="suscription">
+        <aside class="suscription__ad">
+          <h1>good times now</h1>
+          <p>Every Thursday at 8:00pm</p>
+          <button>book now</button>
+        </aside>
+        <article>
+          <figure><img src="../image/undefined" alt="Imágen artículo"/></figure>
+          <h1>The brand new Hollywood horror movie is here!</h1>
+        </article>
+        <article>
+          <figure><img src="../image/undefined" alt="Imágen artículo"/></figure>
+          <h1>The smoking hero of Vela and Gobson!</h1>
+        </article>
+        <article>
+          <figure><img src="../image/undefined" alt="Imágen artículo"/></figure>
+          <h1>Elisabeth Taylor's Life In Front Of The Camera</h1>
+        </article>
+        <form>
+          <h3>Subscribe to all the news</h3>
+          <p>Never miss the latest updates</p>
+          <input type="text" placeholder="Email address"/>
+          <button>sign me up</button>
+        </form>
+      </div>
+    </div>
   </body>
 </html>

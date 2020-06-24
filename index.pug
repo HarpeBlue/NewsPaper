@@ -1,41 +1,70 @@
 include pug/configuraciones.pug
 <!DOCTYPE html>
 html(lang="en")
-  head
-    meta(charset="UTF-8")
-    meta(name="viewport", content="width=device-width, initial-scale=1.0")
-    title Document
+  include pug/head.pug
   body
     header.header
-      .header__container1
-        aside.header__container1--adleft
+      include pug/intros.pug
+      include pug/reviews.pug
+      include pug/menus.pug
+    .main
+      aside.main__news
+        article.news--up
+          h2 The Great Kate
+          p Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cupiditate nostrum fugit, rem et sint laboriosam nobis sit repudiandae. Qui facilis culpa praesentium, nulla commodi eos veniam deleniti obcaecati odit dignissimos.
+          h3
+            |watch video
+            a(href="")
+              img(src="", alt="")
           img(src="", alt="")
-          h2 #{titulo_main[0]}
-          h3 #{titulo_main[1]}
-          h4 #{titulo_main[2]}
-        .header__container1--brand
-          h1 #{titulo_main[3]}
-          span
-          h3 #{titulo_main[4]}
-          span
-        .header__container1--adright
-          h2 #{titulo_main[5]}
-          h2.price #{titulo_main[6]}
-          h4 #{titulo_main[7]}
+        article.news--down
+          figure
+            img(src="", alt="")
+          h2 
+            |Everyone In Old Hollywood Was 
+            span
+              |On Acid
+          h4 March 20, 1966
+          p Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit consequuntur doloremque veritatis, aliquid est non iusto ratione eaque, architecto, cum itaque maiores velit. Consequatur quaerat, soluta excepturi repellendus quod ipsum.
+          h3
+            |read more
+            a(href="")
+              img(src="", alt="")
+        aside.news--ad
+          h1 Dream Lover
+          h2 the bobby darin
+          h3
+            |book
+            a(href="")
+              img(src="", alt="")
+      .trending
+        .trending__principal
+          figure
+            img(src="", alt="")
+          h3 trending
+          a(href="")
+            img(src="", alt="")
+        .trending__description
+          h1 Brunettes, Redheads Picket Does Gentleman Prefer Blondes
+          p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis explicabo voluptatibus dolores nesciunt quam qui numquam libero! Minima sequi alias ad excepturi quos. Porro quisquam non, saepe amet illum praesentium?
+        .trending__autor
           img(src="", alt="")
-      .header__container2
-        .header__container2--reviews
-          .reviews--carrousel
-            ul
-              each carrousel in carrouseles
-                li
-                  a=carrousel
-      .header__container3
-        figue
-          img(src="", alt="")
-        nav
-          each link in nav_bar
-            li
-              a=link
-        figure
-          img(src="", alt="")
+          .trending__autor--description
+            h1 Jinneuvile Martin Jose
+            h3 March 12, 1966
+          .trending__next
+            a(href="")
+              img(src="", alt="")
+            a(href="")
+              img(src="", alt="")
+      .suscription
+        aside.suscription__ad
+          h1 good times now
+          p Every Thursday at 8:00pm
+          button book now
+        +new(0,)
+        +new(1,)
+        +new(2,)
+        include pug/forms.pug
+
+
