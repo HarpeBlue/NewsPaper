@@ -3,12 +3,14 @@ include pug/configuraciones.pug
 html(lang="en")
   include pug/head.pug
   body
-    header.header
-      include pug/intros.pug
-      include pug/reviews.pug
-      include pug/menus.pug
-    .main
-      aside.main__news
+    .gridcontainer
+      header.header
+        include pug/adsLefts.pug
+        include pug/mainTitles.pug
+        include pug/adsRights.pug      
+        include pug/reviews.pug
+        include pug/menus.pug
+      aside.news
         article.news--up
           h2 The Great Kate
           p Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cupiditate nostrum fugit, rem et sint laboriosam nobis sit repudiandae. Qui facilis culpa praesentium, nulla commodi eos veniam deleniti obcaecati odit dignissimos.

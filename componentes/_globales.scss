@@ -1,0 +1,17 @@
+$color-claro: #fff;
+$color-primario: #383638;
+$color-secundario: #ffd8f1;
+$color-variacion: #d8eeff;
+
+@function get-opacity($color,$nivel) {
+  @return rgba($color,$nivel);
+}
+
+* {
+  font-size: 10px;
+  color: $color-primario;
+}
+
+body {
+  margin: 0px;
+}
