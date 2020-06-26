@@ -7,7 +7,7 @@
 -var titulos_articulos  = ["The brand new Hollywood horror movie is here!", "The smoking hero of Vela and Gobson!", "Elisabeth Taylor's Life In Front Of The Camera"]
 
 mixin new(number,imagen)
-  article
-    figure
-      img(src="../image/"+imagen, alt="Imágen artículo")
+  article.suscription__movie
+    figure.suscription__movie-image
+      img(src="../images/"+imagen, alt="Imágen artículo")
     h1 #{titulos_articulos[number]}

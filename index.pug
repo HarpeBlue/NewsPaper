@@ -11,62 +11,75 @@ html(lang="en")
         include pug/reviews.pug
         include pug/menus.pug
       aside.news
-        article.news--up
-          h2 The Great Kate
-          p Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cupiditate nostrum fugit, rem et sint laboriosam nobis sit repudiandae. Qui facilis culpa praesentium, nulla commodi eos veniam deleniti obcaecati odit dignissimos.
-          h3
-            |watch video
-            a(href="")
-              img(src="", alt="")
-          img(src="", alt="")
-        article.news--down
+        article.news__up
+          .news__up-content
+            h2 The Great Kate
+            p Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cupiditate nostrum fugit, rem et sint laboriosam nobis sit repudiandae. Qui facilis culpa praesentium, nulla commodi eos veniam.
+            h3
+              |watch video --->
+              a(href="")
+                img(src="", alt="")
           figure
-            img(src="", alt="")
-          h2 
-            |Everyone In Old Hollywood Was 
-            span
-              |On Acid
-          h4 March 20, 1966
-          p Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit consequuntur doloremque veritatis, aliquid est non iusto ratione eaque, architecto, cum itaque maiores velit. Consequatur quaerat, soluta excepturi repellendus quod ipsum.
-          h3
-            |read more
-            a(href="")
-              img(src="", alt="")
-        aside.news--ad
-          h1 Dream Lover
-          h2 the bobby darin
-          h3
-            |book
-            a(href="")
-              img(src="", alt="")
+            img(src="images/great.jpeg", alt="")
+        article.news__down
+          figure
+            img(src="images/antiguo.jpeg", alt="")
+          .title  
+            h2 
+              |Everyone In Old Hollywood Was 
+              span
+                |On Acid
+            h4 March 20, 1966
+          .news__down-description
+            p lorem lorem lorem lorem loremn lorem loren loren loren loren loren Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          .news__down-link  
+            h3
+              |read more --->
+              a(href="")
+                img(src="", alt="")
+        aside.news__ad
+          .news__ad-title
+            h1 Dream Lover
+          .news__ad-content
+            h2.word the 
+            h2.phrase bobby darin
+            h3
+              |book --->
+              a(href="")
+                img(src="", alt="")
       .trending
         .trending__principal
-          figure
-            img(src="", alt="")
-          h3 trending
-          a(href="")
-            img(src="", alt="")
+          figure.trending__principal-image
+            img(src="images/gentleman.jpeg", alt="")
+          .trending__principal-context
+            h3 trending
+            a(href="")
+              img(src="images/icons/right-arrow.png", alt="")
         .trending__description
           h1 Brunettes, Redheads Picket Does Gentleman Prefer Blondes
           p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis explicabo voluptatibus dolores nesciunt quam qui numquam libero! Minima sequi alias ad excepturi quos. Porro quisquam non, saepe amet illum praesentium?
         .trending__autor
-          img(src="", alt="")
-          .trending__autor--description
-            h1 Jinneuvile Martin Jose
-            h3 March 12, 1966
-          .trending__next
-            a(href="")
+          .trending__autor-data
+            img.autor(src="images/martin_jose.jpeg", alt="")
+            .trending__autor-description
+              h1 Jinneuvile Martin Jose
+              h3 March 12, 1966
+          .trending__autor-next
+            a(href="") <
               img(src="", alt="")
-            a(href="")
+            a(href="") >
               img(src="", alt="")
       .suscription
         aside.suscription__ad
-          h1 good times now
-          p Every Thursday at 8:00pm
-          button book now
-        +new(0,)
-        +new(1,)
-        +new(2,)
+          .suscription__ad-content
+            h1 good times now
+            p Every Thursday at 8:00pm
+            button book now
+          figure.suscription__ad-image
+            img(src="images/hombre_sombrero.jpeg", alt="")
+        +new(0,"index.jpeg")
+        +new(1,"elisabeth.jpeg")
+        +new(2,"index.jpeg")
         include pug/forms.pug
 
 

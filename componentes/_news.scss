@@ -1,3 +1,119 @@
 .news {
   grid-area: news;
+  display: grid;
+  grid-template: auto auto 70px / 1fr;
+  &__up {
+    display: grid;
+    grid-template: auto / repeat(2,1fr);
+    column-gap: 15px;
+    grid-template-areas: "content imagen";
+    border-top: 2px solid get-opacity($color-primario,0.2);
+    border-bottom: 2px solid get-opacity($color-primario,0.2);
+    &-content {
+      grid-area: content;
+      h2 {
+        font-size: 15px;
+        font-weight: bold;
+      }
+      p {
+        font-size: 12px;
+      }
+      h3 {
+        @include link;
+        a {
+        }
+      }
+    }
+    figure {
+      width: 100%;
+      grid-area: imagen;
+      margin: 0px 0;
+      height: auto;
+      img {
+        height: 234px;
+        width: 100%;
+        grid-area: imagen;
+        margin: 10px 0;
+      }
+    }
+  }
+  &__down {
+    display: grid;
+    grid-template: auto auto auto / 50% 50%;
+    grid-template-areas: "imagen title" "description description" "link white";
+    column-gap: 5px;
+    row-gap: 5px;
+    figure {
+      margin: 10px 10px 10px 0px;
+      img {
+        height: 125px;
+        width: 118px;
+      }
+    }
+    .title {
+      grid-area: title;
+      h2 {
+        font-size: 17px;
+        font-weight: bold;
+        span {
+          color: get-opacity($color-primario,0.8);
+          font-size: 15px;
+        }
+      }
+      h4 {
+        color: get-opacity($color-primario,0.4);
+      }
+    }
+    &-description {
+      grid-area: description;
+      p {
+        font-size: 12px;
+      }
+    }
+    &-link {
+      grid-area: link;
+      h3 {  
+        @include link;
+      }
+    }
+  }
+  &__ad {
+    display: grid;
+    grid-template: 1fr / repeat(2,1fr);
+    justify-content: start;
+    align-items: center;
+    background-color: $color-primario;
+    &-title {
+      justify-self: center;
+      text-align: center;
+      h1 {
+        font-size: 30px;
+        margin: 0px;
+        line-height: 23px;
+        color: #d7eefd;
+      }
+    }
+    &-content {
+      h2.word {
+        text-transform: uppercase;
+        font-size: 8px;
+        margin-bottom: 0px;
+        color: #d7eefd;
+      }
+      h2.phrase {
+        text-transform: uppercase;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        font-size: 11px;
+        color: $color-claro;
+      }
+      h3 {
+        text-transform: uppercase;
+        padding-top: 7px;
+        margin-top: 7px;
+        border-top: 1px solid; 
+        color: #e8d4df;
+      }
+    }
+  }
 }

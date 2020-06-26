@@ -4,11 +4,11 @@
   display: grid;
   grid-template: 245px 1fr / repeat(4,1fr);
   grid-template-areas: "header header header header" "news trending trending suscription";
-  column-gap: 30px;
+  column-gap: 20px;
   padding: 30px 90px;
   border: 1px get-opacity($color-primario,0.2) solid;
   margin: 2px;
-  height: 300vh;
+  height: auto;
   @import "../componentes/headers";
   @import "../componentes/news";
   @import "../componentes/trendings";

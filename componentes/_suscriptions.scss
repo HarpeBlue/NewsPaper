@@ -1,3 +1,85 @@
 .suscription {
   grid-area: suscription;
+  display: grid;
+  grid-template: 130px repeat(3,auto) 170px / 1fr;
+  &__ad {
+    background-color: $color-variacion;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    &-content {
+      margin-left: 10px;
+      h1 {
+        font-size: 14px;
+        line-height: 5px;
+        text-transform: uppercase;
+      }
+      p {
+        margin-bottom: 15px;
+      }
+      button {
+        text-transform: uppercase;
+        background-color: $color-variacion;
+        border: 2px solid $color-primario;
+        border-radius: 2px;
+        padding: 2px 12px;
+      }
+    }
+    &-image {
+      padding: 0px;
+      margin: 0px;
+      width: auto;
+      height: auto;
+      img {
+        width: 100px;
+        height: 133px;
+      }
+    }
+  }
+  &__movie {
+    display: flex;
+    text-align: left;
+    align-items: center;
+    border-top: 1px solid get-opacity($color-primario,0.2);
+    border-bottom: 1px solid get-opacity($color-primario,0.2);
+    &-image {
+      margin: 0px;
+      padding: 15px 0;
+      height: auto;
+      img {
+        max-height: 60px;
+        width: 120px;
+      }
+    }
+    h1 {
+      margin-left: 15px;
+      font-size: 13px;
+      font-weight: bold;
+    }
+  }
+  &__form {
+    display: grid;
+    grid-template-rows: 0.5fr 0.5fr 1fr 1fr;
+    row-gap: 10px;
+    h3 {
+      font-size: 13px;
+    }
+    p {
+      margin: 0px;
+    }
+    input{
+      display: block;
+      height: 20px;
+      border-top: 1px solid get-opacity($color-primario,0.2);
+      border-bottom: 1px solid get-opacity($color-primario,0.2);
+      border-left: 0px;
+      border-right: 0px;
+    }
+    button {
+      background-color: $color-primario;
+      color: $color-claro;
+      text-transform: uppercase;
+      font-size: 15px;
+    }
+  }
 }

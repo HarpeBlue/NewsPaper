@@ -1,7 +1,13 @@
 $color-claro: #fff;
-$color-primario: #383638;
+$color-primario: #020002;
 $color-secundario: #ffd8f1;
 $color-variacion: #d8eeff;
+
+@mixin link {
+  font-size: 12px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
 
 @function get-opacity($color,$nivel) {
   @return rgba($color,$nivel);

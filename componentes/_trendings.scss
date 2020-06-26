@@ -1,3 +1,79 @@
 .trending {
   grid-area: trending;
+  padding: 10px;
+  border: 2px solid get-opacity($color-primario,0.2);
+  display: grid;
+  grid-template: 54% 1fr 60px / 1fr;
+  &__principal {
+    display: grid;
+    grid-template: auto 1fr / 1fr;
+    &-image {
+      margin: 0px;
+      height: 100%;
+      img {
+        height: 290px;
+        width: 100%;
+      }
+    }
+    &-context {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      h3 {
+        font-size: 12px;
+        text-transform: uppercase;
+        color: get-opacity($color-primario,0.5);
+      }
+      a {
+        height: auto;
+        img {
+          width: 20px;
+          height: 20px;
+          // color: $color-secundario;
+          // background-color: red;
+        }
+      }
+    }
+  }
+  &__description {
+    h1 {
+      font-size: 25px;
+    }
+    p {
+      font-size: 12px;
+      line-height: 22px;
+    }
+  }
+  &__autor {
+    display: flex;
+    justify-content: space-between;
+    &-data {
+      display: flex;
+      align-items: center;
+      img.autor {
+        height: 60px;
+        width: 60px;
+      }
+      .trending__autor-description {
+        margin-left: 10px;
+        h1 {
+          font-size: 15px;
+        }
+        h3 {
+          color: get-opacity($color-primario,0.3);
+        }
+      }
+    }
+    &-next {
+      align-self: flex-end;
+      a {
+        text-decoration: none;
+        font-size: 25px;
+        color: $color-claro;
+        background-color: $color-primario;
+        padding: 0 5px;
+        border: 1px solid $color-claro;
+      }
+    }
+  }
 }
